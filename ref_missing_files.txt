@@ -1,0 +1,8 @@
+data/Depth/a8_s1_t4_depth.mat
+data/Depth/a23_s6_t4_depth.mat
+data/Depth/a27_s8_t4_depth.mat
+
+data/Inertial/a8_s1_t4_inertial.mat
+data/Inertial/a23_s6_t4_inertial.mat
+data/Inertial/a27_s8_t4_inertial.mat
+
