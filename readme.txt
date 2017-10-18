@@ -1,5 +1,5 @@
-Animate actions using depth data
-===================================
-Run "python animate_depth_image.py" in cmd.
-Refer to "ref_action_list.txt" to see all available action code.
-Action, subject and trial can be configured in the source code.
+Readme
+=======
+Run 'python kinect_animator.py' in terminal to launch the GUI.
+Select action, subject and trial, then click on [Draw] to show the animation on framerate of 30 framerates per second.
+Click [Quit] to exit the program.
