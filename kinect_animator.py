@@ -65,7 +65,7 @@ class Kinect_Animator:
         top.configure(highlightbackground="#d9d9d9")
         top.configure(highlightcolor="black")
 
-        def draw():
+        def show_video():
             selected_action = self.lstAction.get(ANCHOR)
             if(selected_action not in kinect_animator_support.actions_list): return
             action_index = kinect_animator_support.actions_list.index(selected_action) + 1
@@ -81,18 +81,18 @@ class Kinect_Animator:
             print(f'Animate (action={action_index}, subject={subject_index}, trial={trial_index})')
             animate_depth_data(action_index, subject_index, trial_index)
 
-        self.btnDraw = Button(top)
-        self.btnDraw.place(relx=0.69, rely=0.58, height=41, width=96)
-        self.btnDraw.configure(activebackground="#d9d9d9")
-        self.btnDraw.configure(activeforeground="#000000")
-        self.btnDraw.configure(background="#d9d9d9")
-        self.btnDraw.configure(disabledforeground="#a3a3a3")
-        self.btnDraw.configure(foreground="#000000")
-        self.btnDraw.configure(highlightbackground="#d9d9d9")
-        self.btnDraw.configure(highlightcolor="black")
-        self.btnDraw.configure(pady="0")
-        self.btnDraw.configure(text='''Draw''')
-        self.btnDraw.configure(command=draw)
+        self.btnVideo = Button(top)
+        self.btnVideo.place(relx=0.69, rely=0.58, height=41, width=96)
+        self.btnVideo.configure(activebackground="#d9d9d9")
+        self.btnVideo.configure(activeforeground="#000000")
+        self.btnVideo.configure(background="#d9d9d9")
+        self.btnVideo.configure(disabledforeground="#a3a3a3")
+        self.btnVideo.configure(foreground="#000000")
+        self.btnVideo.configure(highlightbackground="#d9d9d9")
+        self.btnVideo.configure(highlightcolor="black")
+        self.btnVideo.configure(pady="0")
+        self.btnVideo.configure(text='''Show''')
+        self.btnVideo.configure(command=show_video)
 
         self.lstAction = Listbox(top)
         self.lstAction.place(relx=0.07, rely=0.09, relheight=0.38, relwidth=0.83)

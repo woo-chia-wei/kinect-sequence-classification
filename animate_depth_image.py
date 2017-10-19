@@ -27,7 +27,7 @@ def animate_depth_data(action, subject, trial):
         sys.exit()
 
     # Create animated plot 
-    im = plt.imshow(data[:,:,0], animated=True, cmap='gray')
+    im = plt.imshow(data[:,:,0], animated=True, cmap='seismic')
     ani = animation.FuncAnimation(fig, update_fig, interval=33, blit=True)
     plt.show()
 
