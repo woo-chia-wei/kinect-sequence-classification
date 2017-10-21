@@ -165,7 +165,7 @@ class Kinect_Animator:
         self.Label2.configure(foreground="#000000")
         self.Label2.configure(highlightbackground="#d9d9d9")
         self.Label2.configure(highlightcolor="black")
-        self.Label2.configure(text='''Subjects''')
+        self.Label2.configure(text='''Trials''')
         self.Label2.configure(width=65)
 
         self.Label3 = Label(top)
@@ -178,7 +178,7 @@ class Kinect_Animator:
         self.Label3.configure(foreground="#000000")
         self.Label3.configure(highlightbackground="#d9d9d9")
         self.Label3.configure(highlightcolor="black")
-        self.Label3.configure(text='''Trials''')
+        self.Label3.configure(text='''Subjects''')
 
         def quit():
             print('quit')
