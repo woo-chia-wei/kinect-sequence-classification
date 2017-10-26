@@ -180,10 +180,6 @@ class Kinect_Animator:
         self.Label3.configure(highlightcolor="black")
         self.Label3.configure(text='''Subjects''')
 
-        def quit():
-            print('quit')
-            top.destroy()
-
         self.btnQuit = Button(top)
         self.btnQuit.place(relx=0.69, rely=0.71, height=41, width=96)
         self.btnQuit.configure(activebackground="#d9d9d9")
@@ -195,7 +191,7 @@ class Kinect_Animator:
         self.btnQuit.configure(highlightcolor="black")
         self.btnQuit.configure(pady="0")
         self.btnQuit.configure(text='''Quit''')
-        self.btnQuit.configure(command=quit)
+        self.btnQuit.configure(command=kinect_animator_support.destroy_window)
 
 if __name__ == '__main__':
     vp_start_gui()
