@@ -9,5 +9,5 @@ Run command "python depth_data_visualizer.py" in terminal launch visualizer tool
 
 <p align="center"> 
   <img src="https://github.com/woo-chia-wei/kinect-sequence-classification/blob/master/public/images/visualizer.png" 
-       width="50%" height="50%">
-</p>.
+       width="80%" height="80%">
+</p>
